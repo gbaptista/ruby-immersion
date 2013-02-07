@@ -39,7 +39,9 @@ class LoveTest_Wtf_01 < Test::Unit::TestCase
     assert_equal({ 'name' => 'Megan' }, Wtf_Human_01.var)
 
     # Apenas ao setar todo o valor da variável é que o writer é executado:
+
     Wtf_Human_01.var = 'Test'
+
     assert_equal('Test:writer', Wtf_Human_01.var)
 
   end
