@@ -9,14 +9,11 @@ class LoveTest < Test::Unit::TestCase
 
   def test_with_love
 
-    # Métodos de classe não podem ser acessados pelo módulo:
-    assert_match(/undefined method/, assert_raise(NoMethodError){
-      Human3.talk
-    }.message)
+    # Classe criadas dentro de módulos os utilizam como namespaces:
 
-    assert_match(/undefined method/, assert_raise(NoMethodError){
-      Human3::talk
-    }.message)
+    assert('cupcake?', Human3::LittleGirl.speak)
+
+    assert('hello stranger...', OtherHuman3::Woman3::SexyLady.speak)
 
   end
 

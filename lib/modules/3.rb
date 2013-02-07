@@ -2,8 +2,28 @@
 
 module Human3
 
-  def talk
-    'blabla'
+  class LittleGirl
+
+    def self.speak
+      'cupcake?'
+    end
+
+  end
+
+end
+
+module OtherHuman3
+
+  module Woman3
+
+    class SexyLady
+
+      def self.speak
+        'hello stranger...'
+      end
+
+    end
+
   end
 
 end

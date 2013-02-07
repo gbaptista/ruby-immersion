@@ -2,8 +2,10 @@
 
 module Human2
 
+  EYES = 'purple'
+
   def self.talk
-    'bla'
+    'petit gateau'
   end
 
 end

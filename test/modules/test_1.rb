@@ -9,9 +9,14 @@ class LoveTest < Test::Unit::TestCase
 
   def test_with_love
 
-    # Módulos não podem ser instanciados.
+    # Módulos não podem ser instanciados nem acessar métodos de classe:
+
     assert_match(/undefined method/, assert_raise(NoMethodError){
       Human1.new
+    }.message)
+
+    assert_match(/undefined method/, assert_raise(NoMethodError){
+      Human1.talk
     }.message)
 
   end
