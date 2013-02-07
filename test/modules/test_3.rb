@@ -5,15 +5,15 @@ require 'include_file'
 
 IncludeFile::inject __FILE__
 
-class LoveTest < Test::Unit::TestCase
+class LoveTestModules3 < Test::Unit::TestCase
 
   def test_with_love
 
-    # Classe criadas dentro de módulos os utilizam como namespaces:
+    # Classes criadas dentro de módulos os utilizam como namespaces:
 
     assert('cupcake?', Human3::LittleGirl.speak)
 
-    assert('hello stranger...', OtherHuman3::Woman3::SexyLady.speak)
+    assert('hello stranger...', Human3::Woman::SexyLady.speak)
 
   end
 

@@ -1,30 +1,45 @@
 require 'rake/testtask'
 
+# rake
+# rake test
 Rake::TestTask.new do |t|
   t.test_files = FileList['test/*/test_*.rb']
 end
 
-# rake g modules:2
+# rake t modules:2
+# rake test_only modules:2
 #
-# lib/modules/2.rb
 # test/modules/test_2.rb
-
-task :generate do
-
+task :test_only do
   rule '' do |t|
-
     if t.name.match ':'
+      Rake::TestTask.new(t.name) do |tt|
+        f = t.name.split(':')
+        tt.test_files = ["test/#{fn[0]}/test_#{fn[1]}.rb"]
+      end
+    end
+  end
+end
+task :t => :test_only
 
-      f = t.name.split(':')
-      File.open("lib/#{f[0]}/#{f[1]}.rb", 'w') { |f| f.write "# encoding: utf-8\n\n" }
-      File.open("test/#{f[0]}/test_#{f[1]}.rb", 'w') { |f| f.write "# encoding: utf-8
+# rake g modules:3
+# rake generate modules:3
+#
+# lib/modules/3.rb
+# test/modules/test_3.rb
+task :generate do
+  rule '' do |t|
+    if t.name.match ':'
+      fn = t.name.split(':')
+      File.open("lib/#{fn[0]}/#{fn[1]}.rb", 'w') { |f| f.write "# encoding: utf-8\n\n" }
+      File.open("test/#{fn[0]}/test_#{fn[1]}.rb", 'w') { |f| f.write "# encoding: utf-8
 
 require 'test/unit'
 require 'include_file'
 
 IncludeFile::inject __FILE__
 
-class LoveTest < Test::Unit::TestCase
+class LoveTest#{fn[0].capitalize}#{fn[1]} < Test::Unit::TestCase
 
   def test_with_love
 
@@ -35,11 +50,11 @@ class LoveTest < Test::Unit::TestCase
 
 end" }
 
-      system("chmod 664 lib/#{f[0]}/#{f[1]}.rb")
-      system("chown gbaptista:gbaptista lib/#{f[0]}/#{f[1]}.rb")
+      system("chmod 664 lib/#{fn[0]}/#{fn[1]}.rb")
+      system("chown gbaptista:gbaptista lib/#{fn[0]}/#{fn[1]}.rb")
 
-      system("chmod 664 test/#{f[0]}/test_#{f[1]}.rb")
-      system("chown gbaptista:gbaptista test/#{f[0]}/test_#{f[1]}.rb")
+      system("chmod 664 test/#{fn[0]}/test_#{fn[1]}.rb")
+      system("chown gbaptista:gbaptista test/#{fn[0]}/test_#{fn[1]}.rb")
 
     end
 

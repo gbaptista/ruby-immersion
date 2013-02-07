@@ -3,27 +3,15 @@
 module Human3
 
   class LittleGirl
-
-    def self.speak
-      'cupcake?'
-    end
-
+    def self.speak; 'cupcake?'; end
   end
 
-end
-
-module OtherHuman3
-
-  module Woman3
+  module Woman
 
     class SexyLady
-
-      def self.speak
-        'hello stranger...'
-      end
-
+      def self.speak; 'hello stranger...'; end
     end
-
+    
   end
 
 end

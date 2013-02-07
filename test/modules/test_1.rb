@@ -5,7 +5,7 @@ require 'include_file'
 
 IncludeFile::inject __FILE__
 
-class LoveTest < Test::Unit::TestCase
+class LoveTestModules1 < Test::Unit::TestCase
 
   def test_with_love
 
