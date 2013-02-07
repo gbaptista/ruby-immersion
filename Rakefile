@@ -64,14 +64,12 @@ class LoveTest_#{fn[0].capitalize}_#{fn[1]} < Test::Unit::TestCase
   end
 
 end" }
+    
+      if FileTest::exists? 'lib/custom_generator_actions.rb'
+        eval(File.new('lib/custom_generator_actions.rb').read)
+      end
 
-      system("chmod 664 lib/#{fn[0]}/#{fn[1]}.rb")
-      system("chown gbaptista:gbaptista lib/#{fn[0]}/#{fn[1]}.rb")
-
-      system("chmod 664 test/#{fn[0]}/test_#{fn[1]}.rb")
-      system("chown gbaptista:gbaptista test/#{fn[0]}/test_#{fn[1]}.rb")
-
-      puts "\nCreated: lib/#{fn[0]}/#{fn[1]}.rb\nCreated: test/#{fn[0]}/test_#{fn[1]}.rb"
+      puts "\nCreated: lib/#{fn[0]}/#{fn[1]}.rb\nCreated: test/#{fn[0]}/test_#{fn[1]}.rb\n\n"
 
     end
 
