@@ -11,11 +11,11 @@ class LoveTestModules2 < Test::Unit::TestCase
 
     # Métodos de módulo e constantes podem ser acessados pelo módulo:
     
-    assert('petit gateau', Human2::talk)
+    assert_equal('petit gateau', Human2::talk)
 
-    assert('petit gateau', Human2.talk)
+    assert_equal('petit gateau', Human2.talk)
 
-    assert('purple', Human2::EYES)
+    assert_equal('purple', Human2::EYES)
 
   end
 

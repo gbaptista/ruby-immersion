@@ -11,9 +11,9 @@ class LoveTestModules3 < Test::Unit::TestCase
 
     # Classes criadas dentro de módulos os utilizam como namespaces:
 
-    assert('cupcake?', Human3::LittleGirl.speak)
+    assert_equal('cupcake?', Human3::LittleGirl.speak)
 
-    assert('hello stranger...', Human3::Woman::SexyLady.speak)
+    assert_equal('hello stranger...', Human3::Woman::SexyLady.speak)
 
   end
 
