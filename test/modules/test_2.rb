@@ -9,8 +9,10 @@ class LoveTest < Test::Unit::TestCase
 
   def test_with_love
 
-    # gowebgo!
-    assert(true)
+    # Métodos de módulo podem ser acessados por . ou :::
+    assert('bla', Human2::talk)
+
+    assert('bla', Human2.talk)
 
   end
 

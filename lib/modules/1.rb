@@ -1,4 +1,4 @@
 # encoding: utf-8
 
-module Human
+module Human1
 end
