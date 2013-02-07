@@ -5,18 +5,18 @@ require 'include_file'
 
 IncludeFile::inject __FILE__
 
-class LoveTestModules1 < Test::Unit::TestCase
+class LoveTest_Modules_01 < Test::Unit::TestCase
 
   def test_with_love
 
-    # Módulos não podem ser instanciados nem acessar métodos de classe:
+    # Módulos não podem ser instanciados nem acessar métodos de instância:
 
     assert_match(/undefined method/, assert_raise(NoMethodError){
-      Human1.new
+      Modules_Human_01.new
     }.message)
 
     assert_match(/undefined method/, assert_raise(NoMethodError){
-      Human1.talk
+      Modules_Human_01.talk
     }.message)
 
   end

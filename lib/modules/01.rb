@@ -1,9 +1,8 @@
 # encoding: utf-8
 
-module Human1
+module Modules_Human_01
 
   def talk
-    'petit gateau'
   end
 
 end
