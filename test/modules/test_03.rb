@@ -18,7 +18,8 @@ class LoveTest_Modules_03 < Test::Unit::TestCase
     # Módulos podem ser criados dentro de módulos para utilizar namespace:
     assert_equal('hi!', Modules_Human_03::Boy.speak)
 
-    # Os métodos e contantes do módulo não são implementados na classe/módulo apenas por  estar dentro dele:
+    # As constantes e métodos do módulo não são implementados
+    # no módulo ou classe que foi criada dentro do módulo:
 
     assert_match(/uninitialized constant/, assert_raise(NameError){
       Modules_Human_03::LittleGirl::EYES
