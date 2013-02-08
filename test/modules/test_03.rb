@@ -33,7 +33,7 @@ class LoveTest_Modules_03 < Test::Unit::TestCase
       Modules_Human_03::Woman::SexyLady::EYES
     }.message)
 
-    assert_match(/undefined method/, assert_raise(NoMethodError){
+    assert_match(/uninitialized constant/, assert_raise(NameError){
       Modules_Human_03::Boy::EYES
     }.message)
 
