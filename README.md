@@ -44,4 +44,5 @@ rake generate modules:3
 Posts
 --------
 
+* [Módulo, Namespace, Mixin e a Herança Múltipla Imaginária](http://gbaptista.com/2013/02/12/modulo-namespace-mixin-e-a-heranca-multipla-imaginaria/)
 * [A malandragem do attr_writer](http://gbaptista.com/2013/02/07/a-malandragem-do-attr_writer/)
