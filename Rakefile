@@ -38,9 +38,13 @@ task :generate do
       Dir::mkdir "lib/#{fn[0]}" if !FileTest::directory? "lib/#{fn[0]}"
       Dir::mkdir "test/#{fn[0]}" if !FileTest::directory? "test/#{fn[0]}"
 
+      class_name = fn[0].split('-')
+      class_name.each_with_index { |v, i| class_name[i] = v.capitalize }
+      class_name = class_name.join
+
       File.open("lib/#{fn[0]}/#{fn[1]}.rb", 'w') { |f| f.write "# encoding: utf-8
 
-class #{fn[0].capitalize}_Human_#{fn[1]}
+class #{class_name}_Human_#{fn[1]}
 
   def self.talk
     'strawberry'
@@ -54,12 +58,12 @@ require 'include_file'
 
 IncludeFile::inject __FILE__
 
-class LoveTest_#{fn[0].capitalize}_#{fn[1]} < Test::Unit::TestCase
+class LoveTest_#{class_name}_#{fn[1]} < Test::Unit::TestCase
 
   def test_with_love
 
     # gowebgo!
-    assert_equal('strawberry', #{fn[0].capitalize}_Human_#{fn[1]}.talk)
+    assert_equal('strawberry', #{class_name}_Human_#{fn[1]}.talk)
 
   end
 
