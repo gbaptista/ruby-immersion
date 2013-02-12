@@ -23,15 +23,15 @@ class LoveTest_variablescope_03 < Test::Unit::TestCase
     assert(VariableScope_03.new.public_method)
     assert_equal('global_d', $variablescope_03_global_d)
  
-    # Variáveis globais são acessíveis quando criadas dentro de um método [instance protected].
+    # Variáveis globais são acessíveis quando criadas dentro de um método protected.
     assert(VariableScope_03.new.send(:protected_method))
     assert_equal('global_e', $variablescope_03_global_e)
  
-    # Variáveis globais são acessíveis quando criadas dentro de um método [instance private].
+    # Variáveis globais são acessíveis quando criadas dentro de um método de instância privado.
     assert(VariableScope_03.new.send(:private_method))
     assert_equal('global_f', $variablescope_03_global_f)
  
-    # Variáveis globais são acessíveis quando criadas dentro de um método [class private].
+    # Variáveis globais são acessíveis quando criadas dentro de um método de classe privado.
     assert(VariableScope_03.send(:private_method))
     assert_equal('global_g', $variablescope_03_global_g)
 
