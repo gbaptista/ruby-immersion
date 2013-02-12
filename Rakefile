@@ -44,7 +44,7 @@ task :generate do
 
       File.open("lib/#{fn[0]}/#{fn[1]}.rb", 'w') { |f| f.write "# encoding: utf-8
 
-class #{class_name}_Human_#{fn[1]}
+class #{class_name}_#{fn[1]}
 
   def self.talk
     'strawberry'
@@ -63,7 +63,7 @@ class LoveTest_#{class_name}_#{fn[1]} < Test::Unit::TestCase
   def test_with_love
 
     # gowebgo!
-    assert_equal('strawberry', #{class_name}_Human_#{fn[1]}.talk)
+    assert_equal('strawberry', #{class_name}_#{fn[1]}.talk)
 
   end
 

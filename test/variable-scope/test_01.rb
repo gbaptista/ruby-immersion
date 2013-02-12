@@ -45,11 +45,11 @@ class LoveTest_VariableScope_01 < Test::Unit::TestCase
     # dentro dela em métodos de instância ou de classe:
 
     assert_match(/undefined local/, assert_raise(NameError){
-      VariableScope_Human_01.read_local_var
+      VariableScope_01.read_local_var
     }.message)
 
     assert_match(/undefined local/, assert_raise(NameError){
-      VariableScope_Human_01.new.read_local_var
+      VariableScope_01.new.read_local_var
     }.message)
 
   end

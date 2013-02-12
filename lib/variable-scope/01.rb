@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-class VariableScope_Human_01
+class VariableScope_01
 
   local_var = 'local'
 
