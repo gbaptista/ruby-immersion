@@ -1,15 +1,6 @@
 # encoding: utf-8
 
+variablescope_01_local_a = 'local_a'
+
 class VariableScope_01
-
-  local_var = 'local'
-
-  def self.read_local_var
-    local_var
-  end
-
-  def read_local_var
-    local_var
-  end
-
 end

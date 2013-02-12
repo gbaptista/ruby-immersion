@@ -2,8 +2,14 @@
 
 class VariableScope_02
 
-  def self.talk
-    'strawberry'
+  local_var = 'local'
+
+  def self.read_local_var
+    local_var
+  end
+
+  def read_local_var
+    local_var
   end
 
 end
