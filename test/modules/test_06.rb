@@ -23,7 +23,7 @@ class LoveTest_Modules_06 < Test::Unit::TestCase
     }.message)
 
     # Quando um módulo "pai" é implementado em um módulo "filho", a classe que implementar
-    # o módulo "filho" receberá os métodos de classe e constantes de ambos os módulos:
+    # o módulo "filho" receberá os métodos de instância e constantes de ambos os módulos:
 
     assert_equal('hello stranger...', Modules_SexyLady_06.new.talk)
 
