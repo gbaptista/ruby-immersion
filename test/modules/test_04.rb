@@ -9,7 +9,7 @@ class LoveTest_Modules_04 < Test::Unit::TestCase
 
   def test_with_love
 
-    # Constantes e métodos de classe são implementados na classe pelo módulo:
+    # Constantes e métodos de instância são implementados na classe pelo módulo:
 
     assert_equal('purple', Modules_SexyLady_04::EYES)
 
