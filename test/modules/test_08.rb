@@ -14,7 +14,7 @@ class LoveTest_Modules_08 < Test::Unit::TestCase
 
     modules_woman_08 = Modules_Woman_08.new
 
-    # Variáveis de instância não possuem valores prédefinidos quando
+    # Variáveis de instância não possuem valores pré-definidos quando
     # manipuladas por métodos de instância:
     assert_equal(nil, modules_woman_08.instance_var)
 

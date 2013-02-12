@@ -21,7 +21,8 @@ class LoveTest_Modules_09 < Test::Unit::TestCase
 
     assert_equal({ 'name' => 'Zooey', 'eyes' => 'purple' }, Modules_Human_09.module_class_var)
 
-    # Variáveis de classe não são manipuláveis pela classe que implementa o módulo pelos métodos de módulo:
+    # Variáveis de classe não são manipuláveis pela classe que
+    # implementa o módulo pelos métodos de módulo:
     assert_match(/undefined method/, assert_raise(NoMethodError){
       Modules_Woman_09.module_class_var
     }.message)

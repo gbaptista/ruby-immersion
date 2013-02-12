@@ -9,11 +9,13 @@ class LoveTest_Modules_10 < Test::Unit::TestCase
 
   def test_with_love
 
-    # Variáveis de classe são manipuláveis pela classe que implementa o módulo pelos métodos de classe:
+    # Variáveis de classe são manipuláveis pela classe que
+    # implementa o módulo pelos métodos de instância:
 
     modules_woman_10 = Modules_Woman_10.new
 
-    # Variáveis de classe possuem valores prédefinidos quando manipuladas por métodos de classe:
+    # Variáveis de classe possuem valores pré-definidos quando
+    # manipuladas por métodos de instância:
     assert_equal({ 'name' => 'Calvin' }, modules_woman_10.class_var)
 
     modules_woman_10.class_var = { 'name' => 'Megan' }
@@ -24,7 +26,8 @@ class LoveTest_Modules_10 < Test::Unit::TestCase
 
     assert_equal({ 'name' => 'Megan', 'eyes' => 'purple' }, modules_woman_10.class_var)
 
-    # Variáveis de classe são tratadas de forma única entre instâncias da classe e o módulo:
+    # Variáveis de classe são tratadas de forma única
+    # entre instâncias da classe e o módulo:
 
     assert_equal({ 'name' => 'Megan', 'eyes' => 'purple' }, modules_woman_10.class_var)
 
