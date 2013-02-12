@@ -5,7 +5,7 @@ Tenho uma série de posts sobre Ruby em meu [blog](#posts) e a ideia deste repos
 
 Além de servir como base para o Blog, pode ser utilizado também parar gerar novos testes a fim de estudar e validar recursos e conceitos da linguagem.
 
-Para mostrar o código nos posts, fiz uma pequena adaptação no plugin [WP-Syntax](http://wordpress.org/extend/plugins/wp-syntax/) do Wordpress que pode ser vista [neste gist](https://gist.github.com/gbaptista/4726705). Esta adaptação está bem nojenta, mas funciona bem. Está na minha lista fazer um plugin decente para incluir códigos de repositórios do Github (o [gist-it.appspot.com](http://gist-it.appspot.com/) é bacana, mas não senti amor).
+Para mostrar o código nos posts, criei um plugin no Wordpress que permite incluir trechos de arquivos do GitHub, o  [WP-Git-Embed](https://github.com/gbaptista/wp-git-embed).
 
 Aqui tem uma lista de todos os [posts já escritos](#posts) até o momento.
 
@@ -44,4 +44,4 @@ rake generate modules:3
 Posts
 --------
 
-* [A malandragem do attr_writer](http://blog.gbaptista.com/2013/02/07/a-malandragem-do-attr_writer/)
+* [A malandragem do attr_writer](http://gbaptista.com/2013/02/07/a-malandragem-do-attr_writer/)
