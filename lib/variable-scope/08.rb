@@ -6,6 +6,10 @@ class VariableScope_08
     @instance_var
   end
 
+  def self.instance_var
+    @instance_var
+  end
+
   def initialize
     @instance_var = 'instance_var'
   end

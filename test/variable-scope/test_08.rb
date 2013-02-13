@@ -13,6 +13,9 @@ class LoveTest_VariableScope_08 < Test::Unit::TestCase
     # se definidas dentro do initialize:
     assert_equal('instance_var', VariableScope_08.new.instance_var)
 
+    # O initialize é ignorado ao acessar a variável por métodos de classe:
+    assert_equal(nil, VariableScope_08.instance_var)
+
   end
 
 end
