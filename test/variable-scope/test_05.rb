@@ -9,14 +9,11 @@ class LoveTest_VariableScope_05 < Test::Unit::TestCase
 
   def test_with_love
 
-    # Variáveis de instância não são acessíveis
-    # quando criadas fora da classe:
+    # Variáveis de instância não são acessíveis quando criadas fora da classe:
     assert_equal(nil, @variablescope_05_instance_a)
 
-    # Variáveis de instância não são acessíveis
-    # fora da classe quando criadas dentro dela:
+    # Variáveis de instância não são acessíveis fora da classe quando criadas dentro dela:
     assert_equal(nil, @variablescope_05_instance_b)
-
 
   end
 
