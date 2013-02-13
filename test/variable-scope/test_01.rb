@@ -9,7 +9,7 @@ class LoveTest_VariableScope_01 < Test::Unit::TestCase
 
   def test_with_love
     
-    # Variáveis locais não são acessíveis quando criadas fora da classe:
+    # Variáveis locais não são acessíveis quando criadas fora da classe.
      assert_match(/undefined local/, assert_raise(NameError){
       variablescope_01_local_a
     }.message)
