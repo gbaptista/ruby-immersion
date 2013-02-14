@@ -9,8 +9,8 @@ class LoveTest_VariableScope_12 < Test::Unit::TestCase
 
   def test_with_love
 
-    # São tratadas de forma isolada entre métodos de classe e as
-    # diferentes instâncias da classe:
+    # Variáveis de classe são tratadas de forma única entre
+    # métodos de classe e as diferentes instâncias da classe:
 
     instance_01 = VariableScope_12.new
     instance_02 = VariableScope_12.new

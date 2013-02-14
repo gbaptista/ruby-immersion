@@ -9,14 +9,14 @@ class LoveTest_VariableScope_11 < Test::Unit::TestCase
 
   def test_with_love
 
-    # Guardam valores pré-definidos na sua criação quando
-    # acessadas por métodos de classe ou de instância:
+    # Variáveis de classe guardam valores pré-definidos na sua criação
+    # quando acessadas por métodos de classe ou de instância:
 
     assert_equal('class_var', VariableScope_11.new.class_var)
 
     assert_equal('class_var', VariableScope_11.class_var)
 
-    # São manipuláveis por métodos de instância:
+    # Variáveis de classe são manipuláveis por métodos de instância:
 
     instance = VariableScope_11.new
 
@@ -24,7 +24,7 @@ class LoveTest_VariableScope_11 < Test::Unit::TestCase
 
     assert_equal('my sugar', instance.class_var)
 
-    # São manipuláveis por métodos de classe:
+    # Variáveis de classe são manipuláveis por métodos de classe:
 
     VariableScope_11.class_var = 'desenhei no ar'
 
