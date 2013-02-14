@@ -10,9 +10,9 @@ Para mostrar o código nos posts, criei um plugin para o Wordpress que permite i
 Posts
 --------
 
-* [As Regras de Ouro do Escopo de Variáveis](http://gbaptista.com/2013/02/14/as-regras-de-ouro-do-escopo-de-variaveis/)
-* [Módulo, Namespace, Mixin e a Herança Múltipla Imaginária](http://gbaptista.com/2013/02/12/modulo-namespace-mixin-e-a-heranca-multipla-imaginaria/)
-* [A Malandragem do attr_writer](http://gbaptista.com/2013/02/07/a-malandragem-do-attr_writer/)
+* [As Regras de Ouro do Escopo de Variáveis](http://gbaptista.com/2013/02/14/ruby-as-regras-de-ouro-do-escopo-de-variaveis/)
+* [Módulo, Namespace, Mixin e a Herança Múltipla Imaginária](http://gbaptista.com/2013/02/12/ruby-modulo-namespace-mixin-e-a-heranca-multipla-imaginaria/)
+* [A Malandragem do attr_writer](http://gbaptista.com/2013/02/07/ruby-a-malandragem-do-attr_writer/)
 
 Rake
 --------
