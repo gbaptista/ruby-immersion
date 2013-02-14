@@ -22,7 +22,7 @@ class LoveTest_VariableScope_13 < Test::Unit::TestCase
       VARIABLESCOPE_13_CONSTANT_B
     }.message)
 
-    # São sempre acessíveis através do ::
+    # Constantes criadas dentro da classe são sempre acessíveis através do ::
     assert_equal('constant_b', VariableScope_13::VARIABLESCOPE_13_CONSTANT_B)
 
   end
