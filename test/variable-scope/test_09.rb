@@ -15,7 +15,7 @@ class LoveTest_VariableScope_09 < Test::Unit::TestCase
     instance_01 = VariableScope_09.new
     instance_02 = VariableScope_09.new
 
-    assert_equal('instance_var', VariableScope_09.instance_var)
+    assert_equal('instance_var_class', VariableScope_09.instance_var)
     assert_equal('instance_var', instance_01.instance_var)
     assert_equal('instance_var', instance_02.instance_var)
 

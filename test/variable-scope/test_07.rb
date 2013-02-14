@@ -14,11 +14,11 @@ class LoveTest_VariableScope_07 < Test::Unit::TestCase
 
     # São manipuláveis por métodos de instância:
 
-    variablescope_07 = VariableScope_07.new
+    instance = VariableScope_07.new
 
-    variablescope_07.instance_var = 'my sugar'
+    instance.instance_var = 'my sugar'
 
-    assert_equal('my sugar', variablescope_07.instance_var)
+    assert_equal('my sugar', instance.instance_var)
 
   end
 

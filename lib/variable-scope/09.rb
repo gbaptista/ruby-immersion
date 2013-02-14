@@ -2,7 +2,7 @@
 
 class VariableScope_09
 
-  @instance_var = 'instance_var'
+  @instance_var = 'instance_var_class'
 
   def self.instance_var; @instance_var; end
 
