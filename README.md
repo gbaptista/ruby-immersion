@@ -5,7 +5,7 @@ Tenho uma série de posts sobre Ruby em meu [blog](#posts) e a ideia deste repos
 
 Além de servir como base para o blog, pode ser utilizado também parar gerar novos testes a fim de estudar e validar recursos e conceitos da linguagem.
 
-Para mostrar o código nos posts, criei um plugin para o Wordpress que permite incluir trechos de arquivos do GitHub, o  [WP-Git-Embed](https://github.com/gbaptista/wp-git-embed).
+Para mostrar o código nos posts, criei um plugin para o Wordpress que permite incluir trechos de arquivos do GitHub, o  [WP-Git-Embed](http://wordpress.org/extend/plugins/wp-git-embed/).
 
 Posts
 --------
